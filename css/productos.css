@@ -1,0 +1,98 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .submenu-container{
+    width: 100%;
+  }
+  
+  .submenu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .submenu li {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .submenu img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .submenu button {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    background-color: #007bffbb;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  .submenu button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .form-buttons {
+    margin-top: 20px;
+  }
+  
+  .form-buttons input[type="submit"] {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    background-color: #0056b3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16;
+  }
+
+  .form-buttons button{
+    width: 120px;
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .form-container {
+    grid-column: span 3;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-gap: 20px;
+  }
+  
+  .form-row label {
+    align-self: start;
+    font-size: 20px;
+  }
+  
+  .form-row input {
+    width: 100%;
+  }
+
+  
+  

@@ -1,0 +1,128 @@
+/* Estilos para el menú superior */
+.top-menu {
+    background-color: #333333a4;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  .top-menu img{
+    margin-right: 10px; /* Espacio entre la imagen y el texto del menú */
+    max-width: 50px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+
+  .top-menu ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+  }
+  
+  .top-menu ul li {
+    display: inline;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .top-menu a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .top-menu ul li img{
+    margin-right: 10px; /* Espacio entre la imagen y el texto del menú */
+    max-width: 50px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+/* Estilos para el menú lateral (sidebar) */
+.sidebar {
+    width: 250px;
+    background-color: #987ec2b7;
+    float: left;
+  }
+  
+  .sidebar .logo {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .sidebar .logo img {
+    max-width: 50px;
+  }
+  
+  .sidebar .side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+  }
+  
+  .sidebar .side-menu ul li {
+    margin-bottom: 5px;
+    display: flex; /* Utilizamos flexbox para alinear elementos */
+    align-items: center; /* Alineamos verticalmente los elementos */
+  }
+  
+  .sidebar .side-menu ul li img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto del menú */
+    max-width: 50px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+  .side-menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+  }
+
+ /* Estilos para el contenido principal */
+.main-content {
+    display: grid;
+    justify-content: center;
+    gap: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -30%);
+    
+  }
+
+  .main-menu{
+    background-color: #987ec2b7;
+  }
+  
+  /* Estilos para el menú principal */
+  .main-menu ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos para cada ítem del menú */
+  .main-menu li {
+    text-align: center;
+  }
+  
+  /* Estilos para las imágenes del menú */
+  .main-content .main-menu li img {
+    max-width: 150px; /* Ajusta el tamaño de la imagen */
+    margin-right: 20px;
+  }
+  
+  /* Estilos para los textos debajo de las imágenes */
+  .main-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #faf7f7;
+    font-size: 26px;
+  }
+  
+  body{
+    position: relative;
+    height: 100vh; /* Establece el 100% de la altura del viewport */
+    margin: 0;
+    background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+  }
