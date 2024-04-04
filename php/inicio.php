@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>inicio</title>
+  <title>Inicio</title>
   <link rel="stylesheet" href="../css/inicio.css">
 </head>
 <body>
@@ -29,13 +29,13 @@
   <!-- Menú lateral -->
   <nav class="side-menu">
     <ul>
-      <li><img src="../images/home.png" alt="home"><a href="#">Inicio</a></li>
-      <li><img src="../images/ventas.png" alt="ventas"><a href="#">Ventas</a></li>
+      <li><img src="../images/home.png" alt="home"><a href="../php/inicio.php">Inicio</a></li>
+      <li><img src="../images/ventas.png" alt="ventas"><a href="../php/ventas.php">Ventas</a></li>
       <li><img src="../images/productos.png" alt="productos"><a href="../php/productos.php">Productos</a></li>
-      <li><img src="../images/clientes.png" alt="clientes"><a href="#">Clientes</a></li>
-      <li><img src="../images/proveedores.png" alt="proveedores"><a href="#">Proveedores</a></li>
+      <li><img src="../images/clientes.png" alt="clientes"><a href="../php/clientes.php">Clientes</a></li>
+      <li><img src="../images/proveedores.png" alt="proveedores"><a href="../php/proveedores.php">Proveedores</a></li>
       <li><img src="../images/reportes.png" alt="reportes"><a href="#">Reportes</a></li>
-      <li><img src="../images/usuarios.png" alt="usuarios"><a href="#">Usuarios</a></li>
+      <li><img src="../images/usuarios.png" alt="usuarios"><a href="../php/usuariosregis.php">Usuarios</a></li>
       <li><img src="../images/compras.png" alt="compras"><a href="#">Compras</a></li>
     </ul>
   </nav>
@@ -52,7 +52,7 @@
       </li>
       <li>
         <img src="../images/ventas.png" alt="ventas">
-        <a href="#">Ventas</a>
+        <a href="../php/ventas.php">Ventas</a>
       </li>
       <li>
         <img src="../images/productos.png" alt="productos">
@@ -60,11 +60,11 @@
       </li>
       <li>
         <img src="../images/clientes.png" alt="clientes">
-        <a href="#">Clientes</a>
+        <a href="../php/clientes.php">Clientes</a>
       </li>
       <li>
         <img src="../images/proveedores.png" alt="proveedores">
-        <a href="#">Proveedores</a>
+        <a href="../php/proveedores.php">Proveedores</a>
       </li>
       <li>
         <img src="../images/reportes.png" alt="reportes">
@@ -72,7 +72,7 @@
       </li>
       <li>
         <img src="../images/usuarios.png" alt="usuarios">
-        <a href="#">Usuarios</a>
+        <a href="../php/usuariosregis.php">Usuarios</a>
       </li>
       <li>
         <img src="../images/compras.png" alt="compras">

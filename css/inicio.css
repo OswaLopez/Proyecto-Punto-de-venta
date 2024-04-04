@@ -126,3 +126,17 @@
     background-image: url("../images/fondo.jpg");
     background-repeat: no-repeat;
   }
+
+  .clie{
+    background-color: #987ec2b7;
+    text-align: center;
+  }
+  .clie h2{
+    color: #fff;
+  }
+  .submenu a{
+      display: block;
+      text-decoration: none;
+      color: #faf7f7;
+      
+  }

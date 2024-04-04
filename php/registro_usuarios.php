@@ -30,7 +30,7 @@
             </div>
             <div class="cuenta">
                 <input class="boton" type="submit" value="Registrar" name="registro">
-                <a href="login.php">Salir</a>
+                <a href="login.php">Iniciar sesión</a>
             </div>
         </form>
     </div>

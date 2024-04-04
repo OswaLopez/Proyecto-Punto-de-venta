@@ -2,9 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Productos</title>
+  <title>Clientes</title>
   <link rel="stylesheet" href="../css/inicio.css">
   <link rel="stylesheet" href="../css/productos.css">
+  <link rel="stylesheet" href="../css/clientes.css">
 </head>
 <body>
 
@@ -45,19 +46,19 @@
 <!-- Contenido principal -->
 <main class="main-content">
   <div class="submenu-container">
-  <div class="clie"><h2>Productos</h2></div>
+  <div class="clie"><h2>CLIENTES</h2></div>
     <ul class="submenu">
-      <li><img src="../images/agregar.png" alt="icono"><a href="../php/productos.php"><button>Agregar</button></a></li>
+      <li><img src="../images/agregar.png" alt=""><a href="../php/clientes.php"><button>Agregar</button></li>
       <li><img src="../images/editar.png" alt="icono"><button>Editar</button></li>
-      <li><img src="../images/actualizar.png" alt="icono"><a href="../php/productoactualiza.php"><button>Actualizar</a></button></li>
-      <li><img src="../images/eliminar.png" alt="icono"><a href="../php/eliminaproducto.php"><button>Eliminar</a></button></li>
+      <li><img src="../images/actualizar.png" alt="icono"><a href=""><button>Actualizar</a></button></li>
+      <li><img src="../images/eliminar.png" alt="icono"><a href="../php/eliminacliente.php"><button>Eliminar</a></button></li>
     </ul>
   </div>
 
   <div class="form-container">
   <?php
         include("config.php");
-        include("registro.php");
+        include("guardacliente.php");
         ?>
     <form action="" method="post">
     <div class="form-row">
@@ -66,34 +67,39 @@
       </div>
 
       <div class="form-row">
-        <label for="descripcion">Descripción:</label>
-        <input type="text" id="descripcion" name="descripcion">
+        <label for="descripcion">Nombre:</label>
+        <input type="text" id="descripcion" name="nombre">
+      </div>
+
+      <div class="form-row">
+        <label for="descripcion">Apellidos:</label>
+        <input type="text" id="descripcion" name="apellidos">
       </div>
 
       <div class="form-row-three">
-        <label for="categoria">Categoría:</label>
-        <input type="text" id="categoria" name="categoria">
+        <label for="categoria">Teléfono:</label>
+        <input type="text" id="categoria" name="tel">
 
-        <label for="unidad-compra">Unidad de compra:</label>
-        <input type="text" id="unidad-compra" name="unidad-compra">
+        <label for="unidad-compra">Celular:</label>
+        <input type="text" id="unidad-compra" name="cell">
 
-        <label for="precio-compra">Precio de compra $:</label>
-        <input type="text" id="precio-compra" name="precio-compra">
+        <label for="precio-compra">Email:</label>
+        <input type="text" id="precio-compra" name="email">
       </div>
 
       <div class="form-row">
-        <label for="precio-menudeo">Precio venta menudeo $:</label>
-        <input type="text" id="precio-menudeo" name="precio-menudeo">
+        <label for="precio-menudeo">Dirección:</label>
+        <input type="text" id="precio-menudeo" name="direccion">
       </div>
 
       <div class="form-row">
-        <label for="precio-mayoreo">Precio venta mayoreo $:</label>
-        <input type="text" id="precio-mayoreo" name="precio-mayoreo">
+        <label for="precio-mayoreo">RFC:</label>
+        <input type="text" id="precio-mayoreo" name="rfc">
       </div>
 
       <div class="form-buttons">
         <input class="boton" type="submit" value="Guardar" name="guardar">
-        <button type="button" name="cancelar" onclick='cancelar()'>Cancelar</button>
+        <button type='button' onclick='cancelar()'>Cancelar</button>
       </div>
     </form>
   </div>

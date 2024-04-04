@@ -1,0 +1,86 @@
+ /* Estilos para el contenedor del formulario */
+  .form-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .clie{
+    background-color: #987ec2b7;
+    text-align: center;
+  }
+  .clie h2{
+    color: #fff;
+  }
+  .submenu a{
+      display: block;
+      text-decoration: none;
+      color: #faf7f7;
+      
+  }
+  .form-row {
+    margin-bottom: 15px;
+  }
+  
+  .form-row label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-row input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form-row-three {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .form-buttons button {
+    padding: 8px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .boton {
+    background-color: #2ecc71;
+  }
+  .form-buttons input[type="submit"] {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    background-color: #0056b3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16;
+  }
+
+  .form-buttons button{
+    width: 120px;
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+
+  
+  /* Otros estilos o ajustes según sea necesario */
+  

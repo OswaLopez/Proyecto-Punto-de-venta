@@ -2,9 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Productos</title>
+  <title>Usuarios</title>
   <link rel="stylesheet" href="../css/inicio.css">
   <link rel="stylesheet" href="../css/productos.css">
+  <link rel="stylesheet" href="../css/prodactualiza.css">
 </head>
 <body>
 
@@ -45,63 +46,69 @@
 <!-- Contenido principal -->
 <main class="main-content">
   <div class="submenu-container">
-  <div class="clie"><h2>Productos</h2></div>
+  <div class="clie"><h2>Usuarios</h2></div>
     <ul class="submenu">
-      <li><img src="../images/agregar.png" alt="icono"><a href="../php/productos.php"><button>Agregar</button></a></li>
+      <li><img src="../images/agregar.png" alt="icono"><button><a href="../php/productos.php">Agregar</a></button></li>
       <li><img src="../images/editar.png" alt="icono"><button>Editar</button></li>
-      <li><img src="../images/actualizar.png" alt="icono"><a href="../php/productoactualiza.php"><button>Actualizar</a></button></li>
-      <li><img src="../images/eliminar.png" alt="icono"><a href="../php/eliminaproducto.php"><button>Eliminar</a></button></li>
+      <li><img src="../images/actualizar.png" alt="icono"><button>Actualizar</button></li>
+      <li><img src="../images/eliminar.png" alt="icono"><button>Eliminar</button></li>
     </ul>
   </div>
 
   <div class="form-container">
   <?php
-        include("config.php");
-        include("registro.php");
+        include("config.php");  
         ?>
     <form action="" method="post">
-    <div class="form-row">
-        <label for="clave">Clave:</label>
-        <input type="text" id="clave" name="clave">
-      </div>
+        <!--<div class="search-container">
+        <img src="../images/busqueda.png" alt="Buscar"><input type="text" id="buscar" name="buscar" placeholder="Buscar...">
+        </div>-->
+        <?php
+        include("config.php");
+        //$buscar = $_POST['buscar'];
 
-      <div class="form-row">
-        <label for="descripcion">Descripción:</label>
-        <input type="text" id="descripcion" name="descripcion">
-      </div>
+        // Consulta SQL para buscar en la base de datos
+        $sql = "SELECT * FROM usuarios";
+       
+        // Ejecutar la consulta
+        $result = mysqli_query($conn, $sql);
+       
+       
+        //Mostrar los resultados si existen
+        if ($result->num_rows > 0) {
+            echo "<table border='2'>
+            <tr>
+              <th>Clave</th>
+              <th>Nombre</th>
+              <th>Apellidos</th>
+              <th>Contraseña</th>
+              
+            </tr>";
+            while ($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                  echo "<td>" . $row['idUsuario'] . "</td>";                  
+                  echo "<td>" . $row['nombre'] . "</td>";
+                  echo "<td>" . $row['apellidos'] . "</td>";
+                  echo "<td>" . $row['contraseña'] . "</td>";
+                echo "</tr>";
+            }
+            echo "</table>";
+        } else {
+            echo "No se encontraron resultados";
+        }
+      
+        // Cerrar conexión
+        $conn->close();
+       
+       ?>
+        <!-- Repite esta estructura <tr>...</tr> con los datos de tu base de datos 
+        </table>
 
-      <div class="form-row-three">
-        <label for="categoria">Categoría:</label>
-        <input type="text" id="categoria" name="categoria">
-
-        <label for="unidad-compra">Unidad de compra:</label>
-        <input type="text" id="unidad-compra" name="unidad-compra">
-
-        <label for="precio-compra">Precio de compra $:</label>
-        <input type="text" id="precio-compra" name="precio-compra">
-      </div>
-
-      <div class="form-row">
-        <label for="precio-menudeo">Precio venta menudeo $:</label>
-        <input type="text" id="precio-menudeo" name="precio-menudeo">
-      </div>
-
-      <div class="form-row">
-        <label for="precio-mayoreo">Precio venta mayoreo $:</label>
-        <input type="text" id="precio-mayoreo" name="precio-mayoreo">
-      </div>
-
-      <div class="form-buttons">
+        <div class="form-buttons">
         <input class="boton" type="submit" value="Guardar" name="guardar">
-        <button type="button" name="cancelar" onclick='cancelar()'>Cancelar</button>
-      </div>
-    </form>
-  </div>
-  <script>
-    function cancelar() {
-      window.history.back();
-    }
-  </script>
+        <button type="button" name="cancelar">Cancelar</button>-->
+  </div>        
+  </form>
 </main>
 
 

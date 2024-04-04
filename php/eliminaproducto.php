@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Actualiza productos</title>
+  <title>Elimina producto</title>
   <link rel="stylesheet" href="../css/inicio.css">
   <link rel="stylesheet" href="../css/productos.css">
   <link rel="stylesheet" href="../css/prodactualiza.css">
@@ -46,11 +46,12 @@
 <!-- Contenido principal -->
 <main class="main-content">
   <div class="submenu-container">
+  <div class="clie"><h2>Eliminar Producto</h2></div>
     <ul class="submenu">
-      <li><img src="../images/agregar.png" alt="icono"><a href="../php/productos.php"><button>Agregar</button></a></li>
+      <li><img src="../images/agregar.png" alt="icono"><button><a href="../php/productos.php">Agregar</a></button></li>
       <li><img src="../images/editar.png" alt="icono"><button>Editar</button></li>
       <li><img src="../images/actualizar.png" alt="icono"><button>Actualizar</button></li>
-      <li><img src="../images/eliminar.png" alt="icono"><a href="../php/eliminaproducto.php"><button>Eliminar</button></a></li>
+      <li><img src="../images/eliminar.png" alt="icono"><a href="../php/productos.php"><button>Eliminar</button></a></li>
     </ul>
   </div>
 
@@ -86,7 +87,7 @@
             while ($row = $result->fetch_assoc()) {
                 echo "<tr>";
                   echo "<td>" . $row['idproducto'] . "</td>";
-                  echo "<td><a href='actualiza.php?idproducto=" . $row['idproducto'] . "'>" . $row['descripcion'] . "</a></td>";
+                  echo "<td><a href='elimina.php?idproducto=" . $row['idproducto'] . "'>" . $row['descripcion'] . "</a></td>";
                   //echo "<td>" . $row['descripcion'] . "</td>";
                   echo "<td>" . $row['categoria'] . "</td>";
                   echo "<td>" . $row['menudeo'] . "</td>";

@@ -20,9 +20,12 @@
       <input type="password" id="contrasena" name="contraseña" required>
     </div>
     <input type="submit" value="Entrar">
-
+    <div class="regis">
+     <button><a href="registro_usuarios.php">Registrar</a></button>
+</div>
     
   </form>
+  
 </div>
 
 </body>

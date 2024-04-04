@@ -19,9 +19,9 @@ body {
   
   .login-container {
     width: 300px;
-    padding: 20px;
+    padding: 40px;
     background-color: #bab7bb9c;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
@@ -31,7 +31,7 @@ body {
   }
   
   .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   
   label {
@@ -61,3 +61,21 @@ body {
     background-color: #0056b3;
   }
   
+  .regis button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bffb0;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 3px; 
+    text-decoration: none;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .regis a{
+    text-decoration: none;
+    color: #fff;
+  }
